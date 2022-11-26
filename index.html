@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- SOCIAL CARD TAGS -->
+   <meta property="og:title" content="Le jeu du pendu biblique">
+   <meta property="og:description" content="Bienvenue sur le jeu du pendu vous avez 8 vies pour trouver un des 486 prénoms issus de la bible">
+   <meta property="og:image" content="https://pendu-biblique.sebastien-collin.fr/assets/images/lependu.jpg">
+   <meta property="og:url" content="https://pendu-biblique.sebastien-collin.fr">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta property="og:site_name" content="Jeu du pendu | Sébastien Collin">
+   <meta property="og:image:alt" content="Sébastien Collin developpeur">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LE JEU DU PENDU | SEBASTIEN COLLIN</title>
+   <link rel="shortcut icon" href="assets/icones/favicon.png" type="image/png">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <header>
+         <h1>Le jeu du pendu prénoms de la bible</h1>
+      </header>
+      <section class="hangman">
+         <img src="assets/images/pendu-7.png" height="200" width="200" alt="pendu">
+      </section>
+      <section class="word">
+         <div id="wordToFind"></div>
+      </section>
+      <section class="result">
+         <p></p>
+      </section>
+      <section class="keyboard">
+         <p>Selectionnez une lettre sur le clavier ou saisissez un mot en majuscule et sans accent, appuyez sur F5 pour recommencer</p>
+         <p>
+            <kbd>
+               <kbd class="key">A</kbd>
+               <kbd class="key">Z</kbd>
+               <kbd class="key">E</kbd>
+               <kbd class="key">R</kbd>
+               <kbd class="key">T</kbd>
+               <kbd class="key">Y</kbd>
+               <kbd class="key">I</kbd>
+               <kbd class="key">U</kbd>
+               <kbd class="key">O</kbd>
+               <kbd class="key">P</kbd>
+            </kbd>
+         </p>
+         <p>
+            <kbd>
+               <kbd class="key">Q</kbd>
+               <kbd class="key">S</kbd>
+               <kbd class="key">D</kbd>
+               <kbd class="key">F</kbd>
+               <kbd class="key">G</kbd>
+               <kbd class="key">H</kbd>
+               <kbd class="key">J</kbd>
+               <kbd class="key">K</kbd>
+               <kbd class="key">L</kbd>
+               <kbd class="key">M</kbd>
+            </kbd>
+         </p>
+         <p>
+            <kbd>
+               <kbd class="key">W</kbd>
+               <kbd class="key">X</kbd>
+               <kbd class="key">C</kbd>
+               <kbd class="key">V</kbd>
+               <kbd class="key">B</kbd>
+               <kbd class="key">N</kbd>
+            </kbd>
+         </p>
+      </section>
+      <section class="answerWithAWord">
+         <form action="post">
+            <p>
+               <input type="text">
+            </p>
+            <button type="submit">Valider</button>
+         </form>
+      </section>
+   </div>
+   <script src="assets/js/wordList.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
